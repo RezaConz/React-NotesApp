@@ -5,7 +5,7 @@ function NoteList({ notes, onDelete, onAchieve }) {
   if (notes.length === 0) {
     return (
       <div className='notes-list__empty-message'>
-        <img src='/empty.png' className='empty-image' alt='No notes' />
+        <img src='/images/empty.png' className='empty-image' alt='No notes' />
         <h2 className='notes-list__empty-message'>No notes available</h2>
       </div>
     );
