@@ -78,7 +78,7 @@ class NoteApp extends React.Component {
            <h2>Tambah Catatan</h2>
            <div className='note-input-container'>
              <img
-               src='/img.png'
+               src='public/img.png'
                alt='Image'
                className='note-input-image'
              />
