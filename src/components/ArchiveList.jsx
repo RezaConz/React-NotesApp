@@ -5,7 +5,11 @@ function ArchiveList({ notes, onDelete, onAchieve }) {
   if (notes.filter((note) => note.achieved === true).length === 0){
     return (
       <div className='notes-list__empty-message'>
-        <img src='/images/empty.png' className='empty-image' alt='No notes' />
+        <img
+          src='/React-NotesApp/images/empty.png'
+          className='empty-image'
+          alt='No notes'
+        />
         <h2 className='notes-list__empty-message'>No notes available</h2>
       </div>
     );
