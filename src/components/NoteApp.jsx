@@ -3,6 +3,7 @@ import NoteList from "./NoteList";
 import { getInitialData, showFormattedDate } from "../utils/index";
 import NoteInput from "./NoteInput";
 import ArchiveList from "./ArchiveList";
+import empty from "React-NotesApp/images/empty.png";
 
 class NoteApp extends React.Component {
   constructor(props) {
@@ -77,11 +78,7 @@ class NoteApp extends React.Component {
          <div className='note-app__body'>
            <h2>Tambah Catatan</h2>
            <div className='note-input-container'>
-             <img
-               src='public/img.png'
-               alt='Image'
-               className='note-input-image'
-             />
+             <img src={empty} alt='Image' className='note-input-image' />
              <NoteInput addNote={this.onAddNoteHandler} />
            </div>
            <h2>Daftar Catatan</h2>
